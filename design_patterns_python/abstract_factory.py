@@ -1,10 +1,10 @@
-# Example of Abstract Factory design pattern
+# Example of 'Abstract Factory' design pattern
 
 from __future__ import annotations
 from abc import ABC, abstractmethod
 
 
-class AbstractMilitaryFactory(ABC):
+class MilitaryFactory(ABC):
     """Abstract Factory"""
 
     @abstractmethod
@@ -20,60 +20,72 @@ class AbstractMilitaryFactory(ABC):
         pass
 
 
-class BlueMilitaryFactory(AbstractMilitaryFactory):
+class BlueMilitaryFactory(MilitaryFactory):
     """Concrete factory A"""
 
-    def create_infantry_unit(self) -> InfantryUnit:
-        return InfantryUnit(25)
+    def create_infantry_unit(self) -> Rifleman:
+        return Rifleman(25)
 
-    def create_land_unit(self) -> LandUnit:
-        return LandUnit(200)
+    def create_land_unit(self) -> Tank:
+        return Tank(200)
 
-    def create_air_unit(self) -> AirUnit:
-        return AirUnit(100)
+    def create_air_unit(self) -> Helicopter:
+        return Helicopter(100)
 
 
-class RedMilitaryFactory(AbstractMilitaryFactory):
+class RedMilitaryFactory(MilitaryFactory):
     """Concrete factory A"""
 
-    def create_infantry_unit(self) -> InfantryUnit:
-        return InfantryUnit(50)
+    def create_infantry_unit(self) -> Rifleman:
+        return Rifleman(50)
 
-    def create_land_unit(self) -> LandUnit:
-        return LandUnit(175)
+    def create_land_unit(self) -> Tank:
+        return Tank(175)
 
-    def create_air_unit(self) -> AirUnit:
-        return AirUnit(90)
+    def create_air_unit(self) -> Helicopter:
+        return Helicopter(90)
 
 
 class InfantryUnit:
-    """Concrete Product A"""
+    """Abstract Product A"""
 
-    def __init__(self, life: int):
+    def __init__(self, life: int) -> None:
         self.life = life
 
-    def __str__(self):
-        return f'InfantryUnit with {self.life} life points'
+    def __str__(self) -> str:
+        return f'{type(self).__name__} with {self.life} life points'
 
 
 class LandUnit:
-    """Concrete Product B"""
+    """Abstract Product B"""
 
     def __init__(self, life: int):
         self.life = life
 
     def __str__(self):
-        return f'LandUnit with {self.life} life points'
+        return f'{type(self).__name__} with {self.life} life points'
 
 
 class AirUnit:
-    """Concrete Product C"""
+    """Abstract Product C"""
 
     def __init__(self, life: int):
         self.life = life
 
     def __str__(self):
-        return f'AirUnit with {self.life} life points'
+        return f'{type(self).__name__} with {self.life} life points'
+
+
+class Rifleman(InfantryUnit):
+    """Concrete Product A"""
+
+
+class Tank(LandUnit):
+    """Concrete Product B"""
+
+
+class Helicopter(AirUnit):
+    """Concrete Product C"""
 
 
 if __name__ == '__main__':

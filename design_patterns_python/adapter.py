@@ -1,4 +1,4 @@
-# Example of Adapter design pattern
+# Example of 'Adapter' design pattern
 
 from abc import ABC, abstractmethod
 
@@ -23,7 +23,7 @@ class FahrenheitSensor:
 class Adapter(Sensor):
     """Adapter"""
 
-    def __init__(self, fahrenheit_sensor: FahrenheitSensor):
+    def __init__(self, fahrenheit_sensor: FahrenheitSensor) -> None:
         self.fahrenheit_sensor = fahrenheit_sensor
 
     def get_temperature(self) -> float:
