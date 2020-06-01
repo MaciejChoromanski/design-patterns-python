@@ -8,7 +8,7 @@ from abc import ABC, abstractmethod
 class Player:
     """Product"""
 
-    _name = ''
+    _name: str = None
 
     def set_name(self, name: str) -> None:
         self._name = name
@@ -33,7 +33,7 @@ class PlayerBuilder(ABC):
 class FlashPlayerCreator(PlayerBuilder):
     """Concrete builder A"""
 
-    _player = Player()
+    _player: Player = Player()
 
     @property
     def player(self) -> Player:
@@ -46,7 +46,7 @@ class FlashPlayerCreator(PlayerBuilder):
 class HTMLPlayerCreator(PlayerBuilder):
     """Concrete builder B"""
 
-    _player = Player()
+    _player: Player = Player()
 
     @property
     def player(self) -> Player:

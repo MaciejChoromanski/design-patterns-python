@@ -32,7 +32,7 @@ class Receiver:
 class Invoker:
     """Invoker"""
 
-    _command = None
+    _command: Command = None
 
     def set_command(self, command: Command) -> None:
         self._command = command

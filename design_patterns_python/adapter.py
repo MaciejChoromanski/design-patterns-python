@@ -14,7 +14,7 @@ class Sensor(ABC):
 class FahrenheitSensor:
     """Adaptee"""
 
-    temperature = 99.4
+    temperature: float = 99.4
 
     def get_temperature(self) -> float:
         return self.temperature
