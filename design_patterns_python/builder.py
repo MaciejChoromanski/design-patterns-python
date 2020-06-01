@@ -59,8 +59,7 @@ class HTMLPlayerCreator(PlayerBuilder):
 class Generator:
     """Director"""
 
-    @staticmethod
-    def build(player_builder: PlayerBuilder) -> None:
+    def build(self, player_builder: PlayerBuilder) -> None:
         player_builder.build_player()
 
 

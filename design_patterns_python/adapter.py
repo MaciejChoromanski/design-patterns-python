@@ -24,10 +24,10 @@ class Adapter(Sensor):
     """Adapter"""
 
     def __init__(self, fahrenheit_sensor: FahrenheitSensor) -> None:
-        self.fahrenheit_sensor = fahrenheit_sensor
+        self._fahrenheit_sensor = fahrenheit_sensor
 
     def get_temperature(self) -> float:
-        return (self.fahrenheit_sensor.get_temperature() - 32) * 5 / 9
+        return (self._fahrenheit_sensor.get_temperature() - 32) * 5 / 9
 
 
 if __name__ == '__main__':
