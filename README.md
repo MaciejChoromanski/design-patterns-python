@@ -12,3 +12,4 @@ Examples of some design patterns in Python
 7. [Observer](design_patterns_python/observer.py)
 8. [Strategy](design_patterns_python/strategy.py)
 9. [Prototype](design_patterns_python/prototype.py)
+10. [Decorator](design_patterns_python/decorator.py)
