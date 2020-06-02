@@ -10,3 +10,4 @@ Examples of some design patterns in Python
 5. [Command](design_patterns_python/command.py)
 6. [Iterator](design_patterns_python/iterator.py)
 7. [Observer](design_patterns_python/observer.py)
+8. [Strategy](design_patterns_python/strategy.py)
