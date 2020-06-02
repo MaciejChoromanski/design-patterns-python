@@ -1,3 +1,5 @@
+# Example of 'Prototype' design pattern
+
 from __future__ import annotations
 import copy
 from typing import List, Dict

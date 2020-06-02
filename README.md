@@ -14,3 +14,4 @@ Examples of some design patterns in Python
 9. [Prototype](design_patterns_python/prototype.py)
 10. [Decorator](design_patterns_python/decorator.py)
 11. [Singleton](design_patterns_python/singleton.py)
+12. [Proxy](design_patterns_python/proxy.py)
