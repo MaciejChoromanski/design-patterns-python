@@ -77,15 +77,15 @@ class AirUnit:
 
 
 class Rifleman(InfantryUnit):
-    """Concrete Product A"""
+    """Concrete Product A1"""
 
 
 class Tank(LandUnit):
-    """Concrete Product B"""
+    """Concrete Product B1"""
 
 
 class Helicopter(AirUnit):
-    """Concrete Product C"""
+    """Concrete Product C1"""
 
 
 if __name__ == '__main__':
