@@ -1,4 +1,4 @@
-# Example of 'Template' design pattern
+# Example of 'Template-method' design pattern
 
 from abc import ABC, abstractmethod
 

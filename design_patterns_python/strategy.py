@@ -1,6 +1,7 @@
 # Example of 'Strategy' design pattern
 
 from __future__ import annotations
+
 from abc import ABC, abstractmethod
 
 

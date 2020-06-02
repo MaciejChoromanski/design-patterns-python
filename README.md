@@ -1,6 +1,8 @@
 # design-patterns-python
 Examples of some design patterns in Python
 
+**NOTE:** These are just plain examples with no explanation, if you'd like to learn the theory behind them I highly recommend [Refactoring Guru](https://refactoring.guru/design-patterns/python).
+
 ## Previewed patterns
 
 1. [Abstract Factory](design_patterns_python/abstract_factory.py)

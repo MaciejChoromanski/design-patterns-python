@@ -1,7 +1,5 @@
 # Example of 'Iterator' design pattern
 
-
-from __future__ import annotations
 from collections.abc import Iterable, Iterator
 from typing import List
 
